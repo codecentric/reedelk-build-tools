@@ -1,0 +1,19 @@
+{
+	"sourcesDir": "/Users/myuser/Desktop/reedelk-sources",
+	"distributionDir": "/Users/myuser/Desktop/reedelk-dist",
+	"websiteBackendDir": "/Users/myuser/Desktop/reedelk-support/reedelk-website/reedelk-website-backend/src/main/resources/assets",
+	"userName": "Reedelk",
+	"skipTests": true,
+	"simulation": true,
+	"versionQualifier": "CE",
+	"runtimeReleaseDirPrefix": "reedelk-runtime-",
+	"mavenRepositoryId": "reedelk-release",
+	"mavenRepositoryUrl": "http://repository.reedelk.com/release/",
+	"excludedDistributionModules": [
+		"module-aws-s3-*",
+		"module-azure-storage-*",
+		"module-jwt-*",
+		"module-kafka-*",
+		"module-salesforce-*"
+	]
+}

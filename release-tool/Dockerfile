@@ -1,0 +1,3 @@
+FROM adoptopenjdk/openjdk11:x86_64-alpine-jre-11.0.6_10
+RUN apk add --no-cache bash && apk add --no-cache wget && wget -P /opt "http://repository.reedelk.com/release/com/reedelk/reedelk-runtime-ee/1.0.6/reedelk-runtime-ee-1.0.6.zip" && cd /opt && unzip /opt/reedelk-runtime-ee-1.0.6.zip && mv reedelk-runtime-ee-1.0.6 reedelk-runtime && echo -e '#!/bin/bash\n/opt/reedelk-runtime/runtime-start.sh $*' > /usr/bin/runtime-start &&  chmod +x /usr/bin/runtime-start && echo -e 'admin.console.address=0.0.0.0' > /opt/reedelk-runtime/config/configuration.properties
+EXPOSE 9988/tcp
