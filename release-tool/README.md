@@ -43,8 +43,3 @@ Community Edition
 ```
 python3 release.py build-config-ce.json
 ```
-
-Enterprise Edition
-```
-python3 release.py build-config-ee.json
-```
